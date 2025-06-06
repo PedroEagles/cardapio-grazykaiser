@@ -1,5 +1,5 @@
 .footer {
-  background-color: #6D0003; /* faixa vermelha */
+  background-color: #6D0003; 
   color: white;
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -10,7 +10,7 @@
   white-space: nowrap;
   flex-wrap: nowrap;
   margin-top: 40px;
-  font-size: 0.9rem; /* fonte um pouco menor */
+  font-size: 0.9rem; 
   text-align: center;
 }
 
@@ -32,10 +32,10 @@
 /* Responsivo para telas pequenas */
 @media (max-width: 600px) {
   .footer {
-    flex-wrap: wrap;         /* permite quebra de linha */
-    white-space: normal;     /* permite quebra natural */
-    font-size: 0.8rem;       /* fonte ainda menor para celular */
-    gap: 10px;               /* menos espaçamento */
+    flex-wrap: wrap;         
+    white-space: normal;    
+    font-size: 0.8rem;       
+    gap: 10px;              
     padding: 10px 8px;
   }
 }
