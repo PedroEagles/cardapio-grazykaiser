@@ -1,0 +1,70 @@
+.footer {
+  background-color: #6D0003; /* faixa vermelha */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 10px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+  font-size: 0.9rem; /* fonte um pouco menor */
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 600px) {
+  .footer {
+    flex-wrap: wrap;         /* permite quebra de linha */
+    white-space: normal;     /* permite quebra natural */
+    font-size: 0.8rem;       /* fonte ainda menor para celular */
+    gap: 10px;               /* menos espaçamento */
+    padding: 10px 8px;
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  object-fit: contain;
+}
+

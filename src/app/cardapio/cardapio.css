@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Poppins:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #e30613;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  width: 100%;
+  height: 220px;
+  background-color: #f8f8f8;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+  font-family: 'Ruda', sans-serif;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 30px 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.card-info h3 {
+  margin: 0;
+  color: #e30613;
+  font-size: 1.6rem; 
+  font-family: 'Poppins', sans-serif; 
+}
+
+.card-info .price {
+  color: #e30613;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-info p.descricao {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-info ul {
+  list-style: none;       
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;     
+  max-width: 300px;       
+}
+
+.card-info ul li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+ul li {
+  list-style: disc;
+  margin-bottom: 8px;
+  font-size: 0.98rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hotdog-list li {
+  margin-bottom: 16px;
+  list-style: none;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  background-color: #690005;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer img {
+  width: 60px;
+  height: auto;
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+.footer a {
+  color: #25d366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  object-fit: contain;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .card-info h3 {
+    font-size: 1.4rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.price .quantidade {
+  color: #555;                    
+  font-size: 0.95rem;              
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.price .valor {
+  color: #e30613;                  
+  font-size: 1.15rem;             
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.disclaimer {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #8d8d8d; 
+  margin-bottom: 6px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu-card.salgados-medios .card-info ul {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0;
+}
+
+.menu-card.salgados-medios .card-info h3 {
+  font-size: 1.4rem; 
+}
+
+.menu-card.salgados-medios .card-info .price {
+  font-size: 1rem; 
+}
+
+.menu-card.salgados-medios .card-info ul li {
+  font-size: 0.85rem; 
+  list-style: disc;
+  list-style-position: inside; 
+}
