@@ -29,7 +29,6 @@
   text-decoration: underline;
 }
 
-/* Responsivo para telas pequenas */
 @media (max-width: 600px) {
   .footer {
     flex-wrap: wrap;         
